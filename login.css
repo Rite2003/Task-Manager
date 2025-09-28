@@ -14,7 +14,7 @@
 }
 
 .box {
-  width: 400px;
+  width: 450px;
   position: relative;
   top: 50%;
   left: 50%;
@@ -109,4 +109,11 @@ h3 {
 }
 .login-footer p a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 403px) and (max-height: 875px) {
+  .container .box {
+    width: 90%;
+    padding: 20px;
+  }
 }
