@@ -1,0 +1,132 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #cecbcb;
+}
+.container h1,
+h2 {
+  text-align: center;
+  padding: 5px 0px;
+}
+#viewTaskBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#viewTaskBtn:hover {
+  background-color: #45a049;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: rgb(242, 239, 239);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+}
+.box i {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.box i:hover {
+  opacity: 1;
+}
+.box h2 {
+  margin-bottom: 15px;
+}
+.box #newTask {
+  width: 74%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+#addTaskBtn {
+  padding: 7px 15px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#addTaskBtn:hover {
+  background-color: #45a049;
+}
+
+/* now style for the to do list */
+ul {
+  margin-top: 20px;
+}
+ul li {
+  list-style-type: none;
+  padding: 5px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul p {
+  flex-grow: 1;
+}
+.add {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #eedbb0dd;
+  border-radius: 50px;
+}
+.remove {
+  background-color: rgba(231, 62, 62, 0.748);
+  padding: 0px 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.remove:hover {
+  background-color: red;
+}
+
+.edit {
+  background-color: #4caf50;
+  padding: 1px 5px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.edit:hover {
+  background-color: #45a049;
+}

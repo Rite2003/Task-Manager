@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(img2.png) no-repeat;
+  background-size: cover;
+}
+
+.box {
+  width: 400px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 5px #89c9f3, -2px -2px 5px #89c9f3;
+  border-radius: 8px;
+  padding: 20px 40px;
+  backdrop-filter: blur(8px);
+  background: url(img3.png);
+}
+
+.login-header h1,
+h2,
+h3 {
+  color: #2d1b88;
+  font-size: 2.2rem; /*35.2px*/
+  text-align: center;
+  padding: 5px 8px;
+}
+
+.login-header h2 {
+  color: #fff;
+  font-size: 2.5rem; /*40px*/
+}
+.login-header h3 {
+  font-size: 1.4rem; /*22.4px*/
+}
+
+.login-body p {
+  margin-top: 20px;
+  position: relative;
+}
+.login-body p i {
+  color: #000;
+  position: absolute;
+  top: 34px;
+  right: 5px;
+  font-size: 20px;
+}
+.login-body p span {
+  color: red;
+  font-size: 18px;
+  font-weight: 600;
+}
+.login-body p label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.login-body p input {
+  width: 100%;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-block: 4px;
+  border: 0.1px solid #89c9f3;
+  outline: none;
+}
+
+.login-body p button {
+  margin-left: 35%;
+  margin-top: 5px;
+  cursor: pointer;
+  color: #000;
+  border-radius: 5px;
+  border: 0.1px solid #89c9f3;
+  background-color: #a3d3f3;
+  width: 30%;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.login-body p button:hover {
+  transform: scale(1.04);
+  color: #fff;
+}
+
+.login-footer p {
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 750;
+}
+
+.login-footer p a {
+  text-decoration: none;
+  color: rgb(3, 99, 244);
+}
+.login-footer p a:hover {
+  text-decoration: underline;
+}

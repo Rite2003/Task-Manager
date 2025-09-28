@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager - Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header class="signup-header">
+          <h1>Task Manager</h1>
+          <hr />
+          <h2>Sign up</h2>
+        </header>
+        <main class="signup-body">
+          <form id="signupForm">
+            <p>
+              <label for="name"
+                >Full Name:
+                <input
+                  type="text"
+                  placeholder="Type your name here..."
+                  id="name"
+                  required
+                />
+              </label>
+              <i class="fa-solid"></i>
+              <span id="nameError"></span>
+            </p>
+            <p>
+              <label for="email"
+                >Email id:
+                <input
+                  type="email"
+                  placeholder="xyz@gmail.com"
+                  id="email"
+                  required
+                />
+              </label>
+              <i class="fa-solid"></i>
+              <span id="emailError"></span>
+            </p>
+            <p>
+              <label for="password"
+                >Password:
+                <input
+                  type="password"
+                  placeholder="at least 8 characters"
+                  id="password"
+                  required
+                  min="8"
+                  max="30"
+              /></label>
+              <i class="fa-solid"></i>
+              <span id="passError"></span>
+            </p>
+            <p>
+              <label for="confirmPassword">
+                Confirm Password:
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  placeholder="Re-enter Password"
+                  required
+                />
+              </label>
+              <i class="fa-solid"></i>
+              <span id="confirmError"></span>
+            </p>
+            <p>
+              <input type="submit" value="Create Account" id="submitBtn" />
+            </p>
+          </form>
+        </main>
+        <footer class="signup-footer">
+          <p>Already have a account? <a href="login.html">Login</a>.</p>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/83fd2603cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

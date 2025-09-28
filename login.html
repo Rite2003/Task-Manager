@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header class="login-header">
+          <h1>Welcome Back</h1>
+          <h3>to your</h3>
+          <h2>Task Manager</h2>
+        </header>
+        <main class="login-body">
+          <form id="loginForm">
+            <p>
+              <label for="email">
+                Email:
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Type your email address.."
+                  required
+                />
+              </label>
+              <i class="fa-solid"></i>
+              <span id="emailError"></span>
+            </p>
+            <p>
+              <label for="password">
+                Password:
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Type password here..."
+                  required
+                  min="8"
+                  max="30"
+                />
+              </label>
+              <i class="fa-solid"></i>
+              <span id="passError"></span>
+            </p>
+            <p>
+              <button type="submit" id="submitBtn">login</button>
+            </p>
+          </form>
+        </main>
+        <footer class="login-footer">
+          <p>Do you have account?<a href="index.html"> Create a Account.</a></p>
+        </footer>
+      </div>
+    </div>
+    <script src="login.js"></script>
+    <script
+      src="https://kit.fontawesome.com/83fd2603cd.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
